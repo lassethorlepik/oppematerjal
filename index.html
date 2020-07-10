@@ -1,0 +1,41 @@
+<html>
+	<title style= "font-family: 'Catamaran', sans-serif; text-align: center;">
+        text
+	</title>
+    <head>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<div id="all">
+		<p id='demo' style='display: none'>Töö – jõu ja jõu mõjul toimunud nihke korrutis (ühik džaul - J)<br>
+Temperatuur – iseloomustab keha soojuslikku olekut (ühik Celsiuse kraad - °C)<br>
+Aeg - sündmuse kestus ajaühikutes mõõdetuna (ühik sekund – s)<br> 
+Energia - iseloomustab keha või jõu võimet teha tööd (ühik džaul - J)<br>
+Mass - iseloomustab keha omadust säilitada liikumisolekut (ühik kilogramm – kg)<br>
+Kiirus - ajaühikus läbitud teepikkus (ühik meetrit sekundis m/s)<br>
+Jõud - iseloomustab ühe keha mõju teisele kehale (ühik njuuton – N)</p>     
+		<button type='button' onclick="toggleText()">Mõisted</button>	
+	</div>
+</body>
+<style>
+div {
+  outline-style: solid;
+  outline-color: red;
+  border: 1px solid red;
+  padding: 15px;
+  min-width:100px;
+  display: inline-block;
+}
+</style>
+<script>
+function toggleText() {
+  var text = document.getElementById("demo");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+</html>
